@@ -1,0 +1,47 @@
+@use "../mixins" as m;
+
+.user-info {
+  @include m.flex();
+  .info-container {
+    font-size: 2.25rem;
+    background-color: #fff;
+    flex: 1;
+    min-width: 22.5rem;
+    height: 12rem;
+    border-radius: 5px;
+    @include m.flex($justify: center);
+    font-weight: 600;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    span {
+      opacity: 0.7;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.stats-icon {
+  padding: 0.75rem;
+  width: 5.75rem;
+  height: auto;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  &.pink {
+    background: #ffe0f0;
+    color: #da4a91;
+  }
+  &.green {
+    color: #2caeba;
+    background: #e0fcff;
+  }
+  &.purple {
+    background: #e6e6ff;
+    color: #5d55fa;
+  }
+  &.orange {
+    background: #fffbea;
+    color: #f0b429;
+  }
+}

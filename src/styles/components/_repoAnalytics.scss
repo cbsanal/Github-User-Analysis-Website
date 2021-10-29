@@ -1,0 +1,43 @@
+.pie-column-container {
+  display: flex;
+  margin-top: 5rem;
+  width: 100%;
+  .pie-container {
+    flex: 1.5;
+    margin-right: 5rem;
+    div,
+    svg {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+  .column-container {
+    flex: 3;
+    div,
+    svg {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+.doughnut-bar-container {
+  display: flex;
+  margin: 5rem 0;
+  .doughnut-container {
+    flex: 1.5;
+    margin-right: 5rem;
+    div,
+    svg {
+      border-radius: 5px;
+      width: 100% !important;
+    }
+  }
+  .bar-container {
+    flex: 3;
+    div,
+    svg {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

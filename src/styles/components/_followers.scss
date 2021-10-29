@@ -1,0 +1,53 @@
+@use "../mixins" as m;
+
+.followers {
+  flex: 1;
+  margin-top: 7.5rem;
+  padding: 2rem;
+  position: relative;
+  height: 30rem;
+  min-width: 49rem;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  &::before {
+    content: "Followers";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateY(-100%);
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 1.5px;
+    font-size: 1.75rem;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
+
+.followers-container {
+  height: 100%;
+  overflow-y: auto;
+  .follower {
+    margin-bottom: 2rem;
+    @include m.flex($justify: normal);
+    img {
+      width: 5rem;
+      border-radius: 50%;
+    }
+    .follower-username {
+      margin-left: 2rem;
+      p {
+        margin: 0;
+        font-size: 1.65rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+      a {
+        font-size: 1.5rem;
+        color: #2caeba;
+      }
+    }
+  }
+}

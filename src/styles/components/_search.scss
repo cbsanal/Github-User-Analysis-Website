@@ -1,0 +1,57 @@
+@use "../mixins" as m;
+
+.search {
+  margin: 5rem 0;
+  @include m.flex();
+  div {
+    display: flex;
+  }
+  .search-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 25%;
+    min-width: 30rem;
+    padding-bottom: 0.75rem;
+    font-size: 2.1rem;
+    color: #000;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-size: 2.1rem;
+    }
+  }
+
+  .search-btn {
+    background: none;
+    background-color: #2caeba;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    cursor: pointer;
+    svg {
+      margin-right: 0.75rem;
+    }
+    .search-icon {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.remaining-request {
+  margin-left: 3.5rem;
+  font-size: 2rem;
+}
+.error-message {
+  position: absolute;
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 4.5rem;
+  font-weight: 600;
+}
