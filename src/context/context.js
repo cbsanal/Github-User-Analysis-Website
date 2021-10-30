@@ -1,7 +1,7 @@
 import { useState, useEffect, createContext } from "react";
-import mockUser from "./mockData.js/mockUser";
-import mockRepos from "./mockData.js/mockRepos";
-import mockFollowers from "./mockData.js/mockFollowers";
+import mockUser from "./mockData/mockUser";
+import mockRepos from "./mockData/mockRepos";
+import mockFollowers from "./mockData/mockFollowers";
 import axios from "axios";
 
 const baseUrl = "https://api.github.com";
@@ -66,6 +66,7 @@ const GithubProvider = ({ children }) => {
 
   useEffect(() => {
     checkRequests();
+    // eslint-disable-next-line
   }, []);
 
   return (

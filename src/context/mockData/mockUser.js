@@ -1,4 +1,4 @@
-export default {
+const mockUser = {
   avatar_url: "https://avatars.githubusercontent.com/u/48856495?v=4",
   bio: "Fresh graduate from Gazi University.\r\nCurrently improving my skills in React.",
   blog: "https://dribbble.com/cbsanal",
@@ -32,3 +32,5 @@ export default {
   updated_at: "2021-10-24T17:10:34Z",
   url: "https://api.github.com/users/cbsanal",
 };
+
+export default mockUser;

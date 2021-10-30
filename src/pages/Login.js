@@ -46,11 +46,8 @@ const Login = () => {
           </g>
         </svg>
       </div>
-
       <h1>Github User Analysis</h1>
-      <button onClick={loginWithRedirect} className="btn">
-        Login / Signup
-      </button>
+      <button onClick={loginWithRedirect}>Login / Signup</button>
     </div>
   );
 };

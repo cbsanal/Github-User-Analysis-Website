@@ -27,7 +27,6 @@ const Dashboard = () => {
         <Followers />
       </div>
       <RepoAnalytics />
-      {/* <Followers /> */}
     </section>
   );
 };

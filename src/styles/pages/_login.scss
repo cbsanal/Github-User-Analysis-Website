@@ -1,21 +1,20 @@
+@use "../mixins" as m;
+
 .login {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  @include m.flex($justify: flex-start, $direction: column);
   height: 100vh;
   button {
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     background-color: #2caeba;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     cursor: pointer;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     letter-spacing: 0.5px;
     margin: 0;
     margin-bottom: 4.5rem;
@@ -31,21 +30,21 @@
 }
 
 #green {
-  animation: green 1s ease-in-out infinite alternate;
+  animation: greenPiece 1s ease-in-out infinite alternate;
   animation-delay: 1s;
 }
 #blue {
-  animation: blue 1s ease-in-out infinite alternate;
+  animation: bluePiece 1s ease-in-out infinite alternate;
   animation-delay: 1s;
 }
 #yellow {
-  animation: yellow 1s ease-in-out infinite alternate;
+  animation: yellowPiece 1s ease-in-out infinite alternate;
 }
 #purple {
-  animation: purple 1s ease-in-out infinite alternate;
+  animation: purplePiece 1s ease-in-out infinite alternate;
 }
 
-@keyframes green {
+@keyframes greenPiece {
   0% {
     transform: translate(0, 0);
   }
@@ -53,7 +52,7 @@
     transform: translate(-1rem, -1rem);
   }
 }
-@keyframes blue {
+@keyframes bluePiece {
   0% {
     transform: translate(0);
   }
@@ -61,7 +60,7 @@
     transform: translate(-1rem);
   }
 }
-@keyframes yellow {
+@keyframes yellowPiece {
   0% {
     transform: translate(0, 0);
   }
@@ -69,11 +68,22 @@
     transform: translate(-0.5rem, 1rem);
   }
 }
-@keyframes purple {
+@keyframes purplePiece {
   0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(1rem, 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    h1 {
+      font-size: 3rem;
+    }
+    button {
+      font-size: 2rem;
+    }
   }
 }

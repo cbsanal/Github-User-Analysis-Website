@@ -23,18 +23,18 @@ const User = () => {
       </div>
       <div className="bottom-info">
         <p>
-          {bio.length > 110 ? bio.substr(0, 110) + "..." : bio || "(empty)"}
+          {bio?.length > 110 ? bio.substr(0, 110) + "..." : bio || "(empty)"}
         </p>
         <p>
-          <MdBusiness className="icon" />
+          <MdBusiness />
           {company || "(empty)"}
         </p>
         <p>
-          <MdLocationOn className="icon" />
+          <MdLocationOn />
           {location || "(empty)"}
         </p>
         <p>
-          <MdLink className="icon" />
+          <MdLink />
           <a href={`${blog}`}>{blog || "(empty)"}</a>
         </p>
       </div>

@@ -7,14 +7,26 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
 }
 body {
   background-color: #e1e8ee;
-  // background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
 }
 a {
   color: #fff;
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50% !important;
+  }
 }

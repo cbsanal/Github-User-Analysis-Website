@@ -1,43 +1,39 @@
-.pie-column-container {
+.charts-container {
   display: flex;
   margin-top: 5rem;
   width: 100%;
-  .pie-container {
-    flex: 1.5;
-    margin-right: 5rem;
-    div,
-    svg {
-      border-radius: 5px;
-      width: 100%;
-    }
-  }
-  .column-container {
-    flex: 3;
-    div,
-    svg {
-      width: 100%;
-      border-radius: 5px;
-    }
+  &:last-child {
+    margin-bottom: 5rem;
   }
 }
-.doughnut-bar-container {
-  display: flex;
-  margin: 5rem 0;
-  .doughnut-container {
-    flex: 1.5;
-    margin-right: 5rem;
-    div,
-    svg {
-      border-radius: 5px;
-      width: 100% !important;
-    }
+
+.pie-container,
+.doughnut-container {
+  flex: 1.5;
+  margin-right: 5rem;
+  div,
+  svg {
+    border-radius: 5px;
+    width: 100% !important;
   }
-  .bar-container {
-    flex: 3;
-    div,
-    svg {
-      width: 100%;
-      border-radius: 5px;
-    }
+}
+.column-container,
+.bar-container {
+  flex: 3;
+  div,
+  svg {
+    border-radius: 5px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .charts-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .pie-container,
+  .doughnut-container {
+    width: 100%;
   }
 }

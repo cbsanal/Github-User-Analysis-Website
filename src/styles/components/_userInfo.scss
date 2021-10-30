@@ -2,11 +2,12 @@
 
 .user-info {
   @include m.flex();
+  flex-wrap: wrap;
   .info-container {
     font-size: 2.25rem;
     background-color: #fff;
     flex: 1;
-    min-width: 22.5rem;
+    min-width: 21.5rem;
     height: 12rem;
     border-radius: 5px;
     @include m.flex($justify: center);
@@ -43,5 +44,21 @@
   &.orange {
     background: #fffbea;
     color: #f0b429;
+  }
+}
+
+@media (max-width: 1036px) {
+  .user-info {
+    gap: 1rem;
+    .info-container {
+      margin: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 721px) {
+  .info-container {
+    padding: 0 2rem !important;
+    justify-content: flex-start !important;
   }
 }

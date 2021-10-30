@@ -10,9 +10,9 @@ const Header = () => {
       {isUser && (
         <>
           <div>
-            <img src={user.picture} alt={user.name} />
+            <img src={user?.picture} alt={user?.name} />
             <h4>
-              Welcome, <b>{user.name.toUpperCase()}</b>
+              Welcome, <b>{user?.name.toUpperCase()}</b>
             </h4>
           </div>
           <button

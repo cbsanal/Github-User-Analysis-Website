@@ -54,7 +54,7 @@ const RepoAnalytics = () => {
 
   return (
     <>
-      <div className="pie-column-container">
+      <div className="charts-container">
         <div className="pie-container">
           <Pie3D chartData={mostUsed} />
         </div>
@@ -62,7 +62,7 @@ const RepoAnalytics = () => {
           <Column3D chartData={stars} />
         </div>
       </div>
-      <div className="doughnut-bar-container">
+      <div className="charts-container">
         <div className="doughnut-container">
           <Doughnut2D chartData={mostPopuler} />
         </div>

@@ -1,4 +1,4 @@
-export default [
+const mockFollowers = [
   {
     avatar_url: "https://avatars.githubusercontent.com/u/25546221?v=4",
     events_url: "https://api.github.com/users/ebubekirrzgr/events{/privacy}",
@@ -594,3 +594,5 @@ export default [
     url: "https://api.github.com/users/ErmanEU",
   },
 ];
+
+export default mockFollowers;

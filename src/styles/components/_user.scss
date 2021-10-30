@@ -2,16 +2,14 @@
 
 .user {
   flex: 1;
-  margin-top: 7.5rem;
   padding: 2rem;
   position: relative;
-  margin-right: 4rem;
-  min-width: 49rem;
   height: 30rem;
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  width: 100%;
   &::before {
     content: "User";
     position: absolute;
@@ -31,17 +29,17 @@
   @include m.flex();
   & > div {
     @include m.flex();
-    .username {
-      margin-left: 1.5rem;
-      font-size: 1.75rem;
-      p {
-        letter-spacing: 0.5px;
-        margin: 0;
-        &:last-child {
-          opacity: 0.5;
-          font-size: 1.65rem;
-          margin-top: 0.75rem;
-        }
+  }
+  .username {
+    margin-left: 1.5rem;
+    font-size: 1.75rem;
+    p {
+      letter-spacing: 0.5px;
+      margin: 0;
+      &:last-child {
+        opacity: 0.5;
+        font-size: 1.65rem;
+        margin-top: 0.75rem;
       }
     }
   }

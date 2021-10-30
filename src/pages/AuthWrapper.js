@@ -4,7 +4,7 @@ import loading from "../assets/loading.gif";
 const AuthWrapper = ({ children }) => {
   const { isLoading, error } = useAuth0();
   if (isLoading) {
-    return <img className="loading-middle" src={loading} alt="loading" />;
+    return <img className="loading-middle" src={loading} alt="loading..." />;
   }
   if (error) {
     return <h1>{error}</h1>;

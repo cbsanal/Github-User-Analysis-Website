@@ -1,0 +1,20 @@
+.not-found {
+  font-size: 15rem;
+  text-align: center;
+}
+
+.go-back {
+  color: #fff;
+  background-color: #2caeba;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+  font-size: 2.5rem;
+  svg {
+    width: 3rem;
+    height: auto;
+  }
+}

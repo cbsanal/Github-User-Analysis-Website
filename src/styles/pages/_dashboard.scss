@@ -2,9 +2,26 @@
 
 .user-followers-container {
   @include m.flex();
+  gap: 4rem;
   width: 100%;
+  margin-top: 7.5rem;
 }
 .main-container {
   width: 120rem;
   margin: auto;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-container {
+    width: calc(100% - 4rem);
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 1036px) {
+  .user-followers-container {
+    flex-direction: column;
+    gap: 7.5rem;
+  }
 }
